@@ -39,4 +39,9 @@ let smoother = ScrollSmoother.create({
     effects: true
 })
 
+const navbarNav = document.querySelector('.navbar-nav');
+document.querySelector('#menu_bar').onclick = () => {
+    navbarNav.classList.toggle('active');
+};
+
 

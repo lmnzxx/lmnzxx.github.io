@@ -12,7 +12,7 @@
 .bg{
     position: absolute;
     width: 100%;
-    height: 530%;
+    height: 550%;
     background-color: black;
     z-index: 1;
 }
@@ -20,7 +20,7 @@
 .bgblur{
     position: absolute;
     width: 100%;
-    height: 530%;
+    height: 550%;
     overflow: hidden;
     background: rgba(93, 65, 87,0.3);
     z-index: 100;
@@ -29,7 +29,7 @@
 
 body{
     overflow-x: hidden;
-    height: 530%;
+    height: 550%;
 }
 
 body::-webkit-scrollbar{
@@ -97,11 +97,11 @@ body::-webkit-scrollbar{
 
 .lingkaran5{
     position: absolute;
-    top: 2600px;
-    left: -450px;
+    top: 2500px;
+    left: -200px;
     bottom: 350px;
-    width: 1000px;
-    height: 1000px;
+    width: 700px;
+    height: 900px;
     border-radius: 10%;
     background-image: linear-gradient(90deg,#556270, #ff6b6b);
     filter: blur(100px);
@@ -112,18 +112,19 @@ body::-webkit-scrollbar{
 
 .lingkaran6{
     position: absolute;
-    top: 3200px;
-    left: 700px;
-    width: 650px;
-    height: 650px;
-    border-radius: 10%;
+    top: 3050px;
+    left: 550px;
+    width: 850px;
+    height: 450px;
     overflow: hidden;
-    background-image: linear-gradient(#2c3e50,#3498db);
-    rotate: 45deg;
     filter: blur(100px);
     animation: animate 6s ease-in-out infinite;
     animation-delay: -2.5s;
     z-index: 5;
+
+	border-bottom:solid 451px #3498db;
+	border-left:solid 430px transparent;
+	border-right:solid 430px transparent;
 }
 
 .lingkaranngapung{
@@ -373,7 +374,6 @@ nav.sticky{
     position: relative;
     top: 500px;
     width: 100%;
-    height: 1750px; 
     z-index: 9999;
 }
 
@@ -395,22 +395,27 @@ table{
     margin: auto;
     margin-top: 50px;
     color: rgba(255, 255, 255, 1);
-    height: 600px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     border-top: 1px solid #fff;
 }
 
-.tablehead{
-    height: 70px;
+.kolom1 {
+    border-radius: 18px 0px 0px 0px;
+    width: 25%;
 }
 
 .kolom2 {
+    width: 40%;
+}
+
+.kolom3 {
     width: 20%;
 }
 
-.kolom1 {
-    width: 30%;
+.kolom4 {
+    border-radius: 0px 18px 0px 0px;
+    width: 15%;
 }
 
 th, td{
@@ -418,18 +423,23 @@ th, td{
 }
 
 td {
-    height: 2vw;
+    height: 8vw;
 }
 
 table img{
-    height: 145px;
+    height: 7.5vw;
+}
+
+
+th {
+    height: 4.5vw;
 }
 
 tr td{
-    font-size: 1.4rem;
+    font-size: 1.5vw;
 }
 
-tr th{
+th{
     background-color: rgba(52, 72, 69, 0.5);
 }
 
@@ -505,8 +515,7 @@ tr th{
 /* Footer */
 footer{
     position: relative;
-    top: 450px;
-    bottom: 0;
+    top: 710px;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     background-color: #2c3e50;
     width: 100%;

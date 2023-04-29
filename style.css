@@ -175,12 +175,6 @@ body::-webkit-scrollbar{
     font-family: 'Bebas Neue', sans-serif;
 }
 
-/* .navbar .logo img{
-    width: 40px;
-    height: 40px;
-    align-items: center;
-} */
-
 .navbar .logo {
     font-family: 'Source Code Pro', sans-serif;
 }
@@ -531,7 +525,7 @@ footer p{
     font-family: 'Source Code Pro', sans-serif;
 }
 
-/* Responsif */
+/* Responsive */
 
 /* Handphone Screen */
 

@@ -1,6 +1,3 @@
-
-
-
 //navbar
 var navbare = document.getElementById("navbar");
 var menu = document.getElementById("navbar-nav");
@@ -26,16 +23,4 @@ var typingEffect = new Typed(".multitext",{
 gsap.from('.konten p',{ duration: 1, x: -300, opacity: 0, ease: 'expo'});
 gsap.from('.konten h1',{ duration: 2, x: -300, opacity: 0, ease: 'expo'});
 gsap.from('.konten',{ duration: 2.5, x: -300, opacity: 0, ease: 'expo'});
-
 gsap.from('.navbar',{ duration: 2, y: -100, opacity: 0, ease: 'expo'});
-
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-
-const navbarNav = document.querySelector('.navbar-nav');
-document.querySelector('#menu_bar').onclick = () => {
-    navbarNav.classList.toggle('active');
-};
-
-

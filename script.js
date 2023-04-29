@@ -32,12 +32,6 @@ gsap.from('.navbar',{ duration: 2, y: -100, opacity: 0, ease: 'expo'});
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-let smoother = ScrollSmoother.create({
-    wrapper: '#navbar',
-    content: '#smooth-konten',
-    smooth: 2,
-    effects: true
-})
 
 const navbarNav = document.querySelector('.navbar-nav');
 document.querySelector('#menu_bar').onclick = () => {

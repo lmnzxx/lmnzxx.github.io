@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS Animasi -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -25,8 +29,8 @@
     <div class="lingkaran4x"></div>
     
 
-    <nav class="navbar" id="navbar">
-        <a href="#" class="logo">Curriculum Vitae</a>
+    <nav class="navbar" id="navbar" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000">
+        <a href="index.html" class="logo">Curriculum Vitae</a>
 
         <div class="navbar-nav" id="navbar-nav">
             <a href="index.html">HOME</a>
@@ -41,12 +45,12 @@
 
     <section class="abtmesec" id="aboutme">
         <div class="konteabtme">
-            <div class="myface">
+            <div class="myface" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">
                 <p >About Me</p>
                 <img src="img/pp.jpg" alt="">
                 <p >Heryandi<br>Pradana</p>
             </div>
-            <div class="abtme">
+            <div class="abtme" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
                 <p class="abtmetxt">Biography</p>
                 <p class="abtmeisi">Nama : I Wayan Heryandi Pradana Putra</p>
                 <p class="abtmeisi">NIM : 220010011</p>
@@ -57,8 +61,8 @@
     </section>
 
     <section class="table" id="education">
-        <p>EDUCATION</p>
-        <table>
+        <p data-aos="fade-down-right" data-aos-offset="200" data-aos-duration="1000">EDUCATION</p>
+        <table data-aos="fade-down-right" data-aos-offset="200" data-aos-duration="1000">
             <tr class="tablehead">
                 <th class="kolom1">PERIODE</th>
                 <th class="kolom2">SEKOLAH</th>
@@ -115,8 +119,8 @@
             </tr>
         </table>
 
-        <p>ORGANIZATION</p>
-        <table>
+        <p data-aos="fade-up-left" data-aos-offset="200" data-aos-duration="1000">ORGANIZATION</p>
+        <table data-aos="fade-up-left" data-aos-offset="200" data-aos-duration="1000">
             <tr class="tablehead">
                 <th class="kolom1">PERIODE</th>
                 <th class="kolom2">ORGANISASI</th>
@@ -154,6 +158,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({});
+    </script>
 
 </body>
 </html>

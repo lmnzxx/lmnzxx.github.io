@@ -568,6 +568,20 @@ footer p{
     font-size: 1.2rem;
     font-family: 'Source Code Pro', sans-serif;
 }
+
+.konstrak{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.konstrak img {
+    width: 25%;
+    height: 40%;
+}
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUAT FOOTER ABOUTME & CONTACT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .abtme-footer{
     top: 35vh;
@@ -578,14 +592,8 @@ footer p{
 }
 
 .edu-footer{
-    top: 80vh;
+    top: -10vh;
 }
-
-.tiktok-embed{
-    position: relative;
-    z-index: 9999999;
-}
-
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SAMPE SINI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* Responsive */
 

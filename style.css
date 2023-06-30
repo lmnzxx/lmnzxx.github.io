@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 
 *{
     padding: 0;
@@ -200,15 +201,11 @@ body::-webkit-scrollbar{
 }
 
 .navbar .logo{
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     /* background-color: rgba(255, 255, 255, 0.01); */
     text-decoration: none;
     color: white;
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-.navbar .logo {
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: 'Qwigley', cursive;
 }
 
 .navbar .navbar-nav a{
@@ -538,7 +535,6 @@ th{
     display: none;
 }
 
-
 .ingfo{
     position: relative;
     top: 40vh;
@@ -603,7 +599,6 @@ footer p{
     /* .navbar .navbar-nav.active{
         right: 0;
     } */
-
 
     .navbar-nav{
         position: absolute;

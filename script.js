@@ -12,10 +12,10 @@ window.onscroll = function(){
 }
 
 var typingEffect = new Typed(".multitext",{
-    strings : ["Mahasiswa ITB STIKOM Bali, Prodi Sistem Komputer"],
-    // loop : true,
+    strings : ["Freelance Photographer and Videographer", "and also the Owner of NZR Media"],
+    loop : true,
     typeSpeed : 100,
-    backSpeed : 80,
+    backSpeed : 1,
     startDelay : 1000,
     backDelay : 1500
 })

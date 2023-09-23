@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 
 *{
     padding: 0;
@@ -12,7 +13,7 @@
 .bg{
     position: absolute;
     width: 100%;
-    height: 550%;
+    height: 100vh;
     background-color: black;
     z-index: 1;
 }
@@ -20,16 +21,35 @@
 .bgblur{
     position: absolute;
     width: 100%;
-    height: 550%;
+    height: 100vh;
     overflow: hidden;
     background: rgba(93, 65, 87,0.3);
     z-index: 100;
 }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUAT NGATUR PANJANG BACKGROUND ABOUTME !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.bg2{
+    position: absolute;
+    width: 100%;
+    height: 280vh;
+    background-color: black;
+    z-index: 1;
+}
 
+.bgblur2{
+    position: absolute;
+    width: 100%;
+    height: 280vh;
+    overflow: hidden;
+    background: rgba(93, 65, 87,0.3);
+    z-index: 100;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SAMPE SINI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-body{
+.body-ind,
+.body-abt,
+.body-cnt {
     overflow-x: hidden;
-    height: 550%;
+    height: 100vh;
 }
 
 body::-webkit-scrollbar{
@@ -52,13 +72,13 @@ body::-webkit-scrollbar{
 
 .lingkaran2{
     position: absolute;
-    top: 300px;
-    left: 900px;
-    width: 1000px;
-    height: 1000px;
-    border-radius: 10%;
-    background-image: linear-gradient(#2c3e50,#3498db);
-    rotate: 45deg;
+    top: 100px;
+    left: 800px;
+    width: 0;
+    height: 0;
+    border-bottom:800px solid #3498db;
+    border-left:800px solid transparent;
+    border-right:800px solid transparent;
     filter: blur(100px);
     animation: animate 6s ease-in-out infinite;
     animation-delay: -2.5s;
@@ -141,7 +161,22 @@ body::-webkit-scrollbar{
     rotate: 45deg;
     z-index: 5;
 }
-
+/*???????????????????????????????????????????????????????????????? NGUBAH UKURAN 1 LINGKARAN DI HALAMAN ABOUTME ?????????????????????????????????????????????????????????????????////*/
+.lingkaran4x{
+    position: absolute;
+    top: 1600px;
+    left: 650px;
+    width: 850px;
+    height: 850px;
+    border-radius: 10%;
+    background-image: linear-gradient(#2c3e50,#3498db);
+    rotate: 45deg;
+    filter: blur(100px);
+    animation: animate 6s ease-in-out infinite;
+    animation-delay: -2.5s;
+    z-index: 5;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SAMPE SINI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 @keyframes animate{
     0%,100%{
         transform: translateY(40px);
@@ -168,15 +203,11 @@ body::-webkit-scrollbar{
 }
 
 .navbar .logo{
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     /* background-color: rgba(255, 255, 255, 0.01); */
     text-decoration: none;
     color: white;
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-.navbar .logo {
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: 'Qwigley', cursive;
 }
 
 .navbar .navbar-nav a{
@@ -201,7 +232,7 @@ nav.sticky{
 
 .konten {
     position: relative;
-    top: 250px;
+    top: 35vh;
     left: 200px;
     width: 50%;
     /* background-color: rgba(255, 255, 255, 0.1); */
@@ -234,14 +265,14 @@ nav.sticky{
 
 #aboutme {
     position: relative;
-    top: 500px;
+    top: 100px;
     z-index: 9999;
     display: flex;
     justify-content: center;
 }
 
 .konteabtme {
-    width: 75%;
+    width: 65%;
     height: 740px;
     display: flex;
     justify-content: space-between;
@@ -307,7 +338,7 @@ nav.sticky{
     position: relative;
     display: flex;
     justify-content: center;
-    top: 500px;
+    top: 80px;
     width: 100%;
     height: 740px;
     z-index: 9999;
@@ -319,12 +350,12 @@ nav.sticky{
     justify-content: space-between;
     align-items: center;
     height: 800px;
-    width: 80%;
+    width: 70%;
 }
 
 .kontener{
     width: 55%;
-    height: 550px;
+    height: 500px;
     border-radius: 0px 20% 0px 20%;
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -335,10 +366,10 @@ nav.sticky{
 
 .icon a{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     color: #fff;
     font-size: 4.5rem;
-    margin-left: 90px;
+    margin-left: 5vw;
     margin-top: 100px;
     text-decoration: none;
 }
@@ -346,27 +377,31 @@ nav.sticky{
 .cntctisi{
     color: #fff;
     margin-top: 80px;
-    margin-left: 40px;
+    margin-left: 4vw;
     font-size: 30px;
     font-family: 'Source Code Pro', sans-serif;
 }
 
 .contacttittle {
     height: 550px;
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    letter-spacing: 0.3vw;
     color: white;
     font-size: 4rem;
 }
 
 .contacttittle p {
-    margin-top: 60px;
+    text-align: right;
+    margin-top: 18vh;
+    margin-left: 5vh;
+    transform: skew(-8deg);
 }
 
 /* Table */
 .table {
     position: relative;
-    top: 500px;
+    top: 50px;
     width: 100%;
     z-index: 9999;
 }
@@ -506,10 +541,21 @@ th{
     display: none;
 }
 
+.ingfo{
+    position: relative;
+    top: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 4.4rem;
+    font-family: 'Source Code Pro', sans-serif;
+    z-index: 99999;
+}
 /* Footer */
 footer{
     position: relative;
-    top: 710px;
+    top: 71vh;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     background-color: #2c3e50;
     width: 100%;
@@ -523,6 +569,197 @@ footer p{
     color: rgba(255, 255, 255, 1);
     font-size: 1.2rem;
     font-family: 'Source Code Pro', sans-serif;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUAT FOOTER ABOUTME & CONTACT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.abtme-footer{
+    top: 35vh;
+}
+
+.footer2{
+    top: 15vh;
+}
+
+.edu-footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: #2c3e50;
+    z-index: 99999;
+    position: relative;
+    top: 300vh;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.edu-footer p {
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.2rem;
+    font-family: 'Source Code Pro', sans-serif;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SAMPE SINI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/* Gallery */
+.body-gal {
+    overflow-x: hidden;
+    height: 135vh;
+}
+
+.slideshow {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 60vh;
+}
+
+.slideimg {
+    height: 100%;
+    width: 100%;
+}
+
+.slideshow img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.tumpukslideshow {
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.2);
+}   
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 60vh;
+    width: 100%;
+    height: 85vh;
+}
+
+.gallerytxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    font-size: 3vw;
+    letter-spacing: 0.4vw;
+    font-weight: 600;
+    transform: skew(-10deg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-content {
+    width: 98%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gallerytxt p {
+    border-bottom: 0.2vw solid black;
+}
+
+.gallery-content img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.galleryimg,
+.galleryimgsplit {
+    width: 24%;
+    height: 92%;
+}
+
+.galleryimgsplit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imgsplit {
+    height: 48%;
+    width: 100%;
+}
+
+/* tiktok embed styling */
+
+.tiktokembed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    height: 70vh;
+    top: 150vh;
+}
+
+.tiktoktext {
+    text-align: right;
+    font-size: 4vw;
+    width: 50%;
+    font-weight: 700;
+    letter-spacing: 0.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: skew(8deg);
+}
+
+.tiktoktext p {
+    margin-right: 5vw;
+}
+
+.embedcontent {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+}
+
+.igembed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    height: 80vh;
+    top: 220vh;
+}
+
+.embedcontentig {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+}
+
+.igtext {
+    width: 35%;
+    text-align: left;
+    font-size:4vw;
+    font-weight: 700;
+    letter-spacing: 0.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: skew(8deg);
+}
+
+.igcontent {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
 }
 
 /* Responsive */
@@ -541,7 +778,6 @@ footer p{
     /* .navbar .navbar-nav.active{
         right: 0;
     } */
-
 
     .navbar-nav{
         position: absolute;
